@@ -1,6 +1,6 @@
-from .onmanager import ONProcess
 from xml.etree import cElementTree
-import os
+import os, sys
+from onmanager import ONProcess
 
 # Check for the existing of ON_COM32_VERSION environment variable,
 # Default value is set to 15

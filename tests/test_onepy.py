@@ -15,7 +15,7 @@ class TestOneNote(unittest.TestCase):
 	def test_instance(self):
 		for nbk in on.hierarchy:
 			print (nbk)
-			if nbk.name == "SoundFocus":
+			if nbk.name == "Mon bloc-notes":
 				for s in nbk:
 			 		print ("  " + str(s))
 			 		for page in s:
