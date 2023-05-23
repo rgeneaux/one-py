@@ -1,6 +1,10 @@
 from xml.etree import cElementTree
 import os, sys
-from onmanager import ONProcess
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
+
+from onepy.onmanager import ONProcess
 
 # Check for the existing of ON_COM32_VERSION environment variable,
 # Default value is set to 15
